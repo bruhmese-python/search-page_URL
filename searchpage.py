@@ -5,7 +5,8 @@ class search:
 
     PRE = 0
     POST = 1
-
+    
+    #Assigning values
     GOOGLE = ["https://www.google.com/search?q=", ""]
     YAHOO = ["https://in.search.yahoo.com/search?p=",
              "&fr=yfp-t&ei=UTF-8&fp=1"]
@@ -15,10 +16,11 @@ class search:
     YANDEX = ["https://yandex.com/search/?text=", "&lr=20983"]
     WOLFRAM = ["https://www.wolframalpha.com/input/?i=", ""]
     LYCOS = ["https://search13.lycos.com/web/?q=", ""]
-    ASK = ["https://www.ask.com/web?q=", ""]  # %
-    EXCITE = ["https://results.excite.com/serp?q=", ""]  # % INSTEAD OF +
+    ASK = ["https://www.ask.com/web?q=", ""]
+    EXCITE = ["https://results.excite.com/serp?q=", ""]
     BING = ["https://www.bing.com/search?q=", ""]
 
+    #Single line lambda functions for-each engine
     google = lambda string: search.query(string, search.GOOGLE)
     yahoo = lambda string: search.query(string, search.YAHOO)
     aol = lambda string: search.query(string, search.AOL)
@@ -30,6 +32,7 @@ class search:
     excite = lambda string: search.query(string, search.EXCITE, separator="%")
     bing = lambda string: search.query(string, search.BING)
 
+    #Function to generate query
     def query(string: str, ENGINE, separator: str = "+"):
 
         string = [string][0].split(' ')
