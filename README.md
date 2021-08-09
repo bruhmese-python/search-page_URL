@@ -15,6 +15,10 @@ Generate `google`/`yahoo`/`bing`/`Aol`/`duckduckgo`/`yandex`/`wolfram`/`lycos`/`
 | Aol  | "https://search.aol.co.uk/aol/search?q=Hey+whatchu+doin&s_it=aoluk-homePage100&s_chn=hp&rp=&s_qt=ac&t=h_&ia=images"  |
 | and so on..| |
 
+##  Prerequisites
+
+- Python 3+
+- Any webscraping library like BeautifulSoup (OPTIONAL)
 
 ##  Practical Usage with BeautifulSoup library
 
