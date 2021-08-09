@@ -18,7 +18,7 @@ Generate `google`/`yahoo`/`bing`/`Aol`/`duckduckgo`/`yandex`/`wolfram`/`lycos`/`
 ##  Prerequisites
 
 - Python 3+
-- Any webscraping library like BeautifulSoup (OPTIONAL)
+- *(OPTIONAL)* : Any webscraping library like BeautifulSoup 
 
 ##  Practical Usage with BeautifulSoup library
 
