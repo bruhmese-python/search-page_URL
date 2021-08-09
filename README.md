@@ -1,10 +1,12 @@
 # search-page_URL.py
 Generate `google`/`yahoo`/`bing`/`Aol`/`duckduckgo`/`yandex`/`wolfram`/`lycos`/`ask`/`excite` searchpage URLs from search string.
 
+            ‎
 
-"Hey watchu doin" *("Plain search text")*
+| Search string | "Hey watchu doin" *("Plain search text")* |
+| ------------- | ------------- |
 
-👇
+            ‎
 
 | Search Engine  | URL |
 | ------------- | ------------- |
@@ -22,7 +24,7 @@ import requests
 from bs4 import BeautifulSoup
 import searchpage
 
-URL = searchpage.search.google("Hey whatchu doin")
+URL = search.google("Hey whatchu doin")
 response = requests.get(URL)
 content = BeautifulSoup(response.text, "html.parser")
 print(content)
