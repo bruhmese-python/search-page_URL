@@ -22,7 +22,7 @@ Generate `google`/`yahoo`/`bing`/`Aol`/`duckduckgo`/`yandex`/`wolfram`/`lycos`/`
 
 import requests
 from bs4 import BeautifulSoup
-import searchpage
+import searchpage       #Download the searhpage.py to your working directory
 
 URL = search.google("Hey whatchu doin")
 response = requests.get(URL)
