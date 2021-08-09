@@ -52,7 +52,7 @@ class search:
 # from bs4 import BeautifulSoup
 # import searchpage
 
-# URL = searchpage.search.google("Hey whatchu doin")
+# URL = search.google("Hey whatchu doin"))
 # response = requests.get(URL)
 # content = BeautifulSoup(response.text, "html.parser")
 # print(content)
