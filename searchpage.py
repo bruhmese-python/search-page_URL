@@ -28,8 +28,10 @@ class search:
     yandex = lambda string: search.query(string, search.YANDEX)
     wolfram = lambda string: search.query(string, search.WOLFRAM)
     lycos = lambda string: search.query(string, search.LYCOS)
-    ask = lambda string: search.query(string, search.ASK, separator="%")
-    excite = lambda string: search.query(string, search.EXCITE, separator="%")
+    ask = lambda string: search.query(
+        string=string, ENGINE=search.ASK, separator="%")
+    excite = lambda string: search.query(
+        string=string, ENGINE=search.EXCITE, separator="%")
     bing = lambda string: search.query(string, search.BING)
 
     #Function to generate query
