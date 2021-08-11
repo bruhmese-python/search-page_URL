@@ -29,6 +29,10 @@ from bs4 import BeautifulSoup
 import searchpage       #Download searchpage.py to your working directory
 
 URL = search.google("Hey whatchu doin")
+#     search.aol("Hey whatchu doin")
+#     search.wolfram("Hey whatchu doin")
+#     search.ask("Hey whatchu doin")
+#     search.(...(" ... "))
 response = requests.get(URL)
 content = BeautifulSoup(response.text, "html.parser")
 print(content)
